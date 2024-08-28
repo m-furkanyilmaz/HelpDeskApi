@@ -15,6 +15,7 @@ public class SoruController : ControllerBase
     }
 
     [HttpGet]
+    [Route("questions")]
     public ActionResult<IEnumerable<Question>> GetSoru()
     {
         return _dbContext.questions.ToList();

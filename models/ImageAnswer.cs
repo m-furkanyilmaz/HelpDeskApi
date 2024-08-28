@@ -1,15 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 
-public class ImageAnswer
-{
-    [Key]
-    [Required]
-    public int Id { get; set; }
-    [Required]
-    public int SoruId { get; set; }
-    [Required]
-    public int UserId { get; set; }
-    [Required]
-    public string Image { get; set; } = string.Empty;
-    
-}
+    public class ImageAnswer
+    {
+
+        [System.ComponentModel.DataAnnotations.Key]
+        public int Id { get; set; }
+
+        public required int SoruId { get; set; }
+
+        public required int UserId { get; set; }
+
+        public required string Image { get; set; }
+
+    }

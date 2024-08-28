@@ -1,15 +1,14 @@
 using System.ComponentModel.DataAnnotations;
 
-public class Question
-{
-    [Key]
-    [Required]
-    public int SoruId { get; set; }
-	[Required]
-    public string Soru { get; set; } = string.Empty;
-    [Required]
-    public int UserId { get; set; }
-    [Required]
-    public string RecordTime { get; set; } = string.Empty;
-    
-}
+    public class Question
+    {
+        [System.ComponentModel.DataAnnotations.Key]
+        public int SoruId { get; set; }
+
+        public required string Soru { get; set; }
+
+        public required int UserId { get; set; }
+
+        public required string RecordTime { get; set; }
+
+    }

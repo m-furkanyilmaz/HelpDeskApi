@@ -1,20 +1,21 @@
 using System.ComponentModel.DataAnnotations;
 
+
 public class User
 {
-    [Key]
-    [Required]
+
+    [System.ComponentModel.DataAnnotations.Key]
     public int UserID { get; set; }         
-    [Required]
-    public int TRIdentity { get; set; } = 0;
-    [Required]
-    public string Username { get; set; } = string.Empty;
-    [Required]
-    public string Password { get; set; } = string.Empty;
-    [Required]
-    public string Fullname { get; set; } = string.Empty;
-    [Required]
-    public string Phone { get; set; } = string.Empty;
-    [Required]
-    public string Comment { get; set; } = string.Empty;
+
+    public required int TRIdentity { get; set; }
+
+    public required string Username { get; set; }
+
+    public required string Password { get; set; }
+
+    public required string Fullname { get; set; }
+
+    public required string Phone { get; set; }
+
+    public required string Comment { get; set; }
 }

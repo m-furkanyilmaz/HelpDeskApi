@@ -1,17 +1,16 @@
 using System.ComponentModel.DataAnnotations;
 
-public class Answer
-{
-    [Key]
-    [Required]
-    public int Id{ get; set; }
-    [Required]
-    public int SoruId { get; set; }
-    [Required]
-    public int UserId { get; set; }
-    [Required]
-    public string Username { get; set; } = string.Empty;
-    [Required]
-    public string answer {  get; set; } = string.Empty;
-    public string Institute { get; set; } = string.Empty ;
-}
+    public class Answer
+    {
+        [System.ComponentModel.DataAnnotations.Key]
+        public int Id { get; set; }
+
+        public required int SoruId { get; set; }
+
+        public required int UserId { get; set; }
+
+        public required string Username { get; set; }
+
+        public required string answer { get; set; }
+        public string Institute { get; set; } = string.Empty;
+    }

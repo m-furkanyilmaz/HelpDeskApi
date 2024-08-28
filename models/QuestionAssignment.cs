@@ -1,14 +1,13 @@
 using System.ComponentModel.DataAnnotations;
-
+ 
 public class QuestionAssignment
 {
-    [Key]
-    [Required]
+    [System.ComponentModel.DataAnnotations.Key]
     public int Id { get; set; }
-    [Required]
-    public int SoruId { get; set; }
-    [Required]
-    public int UserId { get; set; }
-    [Required]
-    public bool isAnswered { get; set; }
+
+    public required int SoruId { get; set; }
+
+    public required int UserId { get; set; }
+
+    public required bool isAnswered { get; set; }
 }

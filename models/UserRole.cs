@@ -1,18 +1,18 @@
 using System.ComponentModel.DataAnnotations;
 
+
 public class UserRole
 {
-    [Key]
-    [Required]
+    [System.ComponentModel.DataAnnotations.Key]
     public int RoleID { get; set; }
-    [Required]
-    public int UserId { get; set; }
-    [Required]
-    public bool isAdmin { get; set; }
-    [Required]
-    public bool canAssignment { get; set; }
-    [Required]
-    public bool canQuestion { get; set; }
-    [Required]
-    public bool canAsk { get; set; }
+
+    public required int UserId { get; set; }
+
+    public required bool isAdmin { get; set; }
+
+    public required bool canAssignment { get; set; }
+
+    public required bool canQuestion { get; set; }
+
+    public required bool canAsk { get; set; }
 }
